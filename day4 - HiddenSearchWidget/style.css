@@ -1,0 +1,60 @@
+.html {
+  font-size: 62.5%;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(
+    90deg,
+    rgb(59, 103, 138),
+    rgb(29, 157, 216)
+  );
+}
+.search {
+  position: relative;
+}
+
+.input {
+  font-size: 1.6rem;
+  padding: 0.3rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  padding: 1rem;
+  width: 5rem;
+  height: 5rem;
+  transition: all 0.3s ease-in;
+}
+
+.btn {
+  font-size: 1.6rem;
+  padding: 0.3rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  padding: 1rem;
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+.input.active {
+  width: 20rem;
+}
+.input.active + .btn {
+  transform: translateX(19.2rem);
+}
+.input:focus {
+  outline: none;
+}
